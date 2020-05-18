@@ -14,7 +14,7 @@ declare var M: any;
 })
 export class PatientComponent implements OnInit {
 
-  constructor(private patientService: PatientService) { }
+  constructor(public patientService: PatientService) { }
 
   ngOnInit() {
     this.resetForm();
